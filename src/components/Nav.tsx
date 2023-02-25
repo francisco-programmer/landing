@@ -1,83 +1,70 @@
-import React, { useState } from 'react'
-import { createPopper } from "@popperjs/core";
+import React, {useState} from 'react'
 
-const Nav  = () => {   
-
-    const [navbar, setNavbar] = useState(false);
-
-    return (
-        <nav className="w-full bg-white shadow ">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-                <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="javascript:void(0)">
-                            <h2 className="text-2xl font-bold">LOGO</h2>
-                        </a>
-                        <div className="md:hidden">
-                            <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                                onClick={() => setNavbar(!navbar)}
-                            >
-                                {navbar ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                ) : (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth={2}
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                        />
-                                    </svg>
-                                )}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0  relative fixed z-50 ${
-                            navbar ? "block" : "hidden"
-                        }`}
-                    >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Home</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Blog</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">About US</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Contact US</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    )
-};
+import {IoBusinessSharp } from  "react-icons/io5";
+import { IoMdHelpCircle } from  "react-icons/io";
+import {BiLogOut } from  "react-icons/bi";
+import {AiFillSetting } from  "react-icons/ai";
+import {CgProfile } from  "react-icons/cg";
+import {MdBusinessCenter, MdAddReaction } from  "react-icons/md";
+import {RiCloseLine, RiMenu3Line } from  "react-icons/ri"
+import pres from '../assets/pre.png'
 
 
+
+const Nav = () => {
+    const [bg, SetBg] = useState(true)
+      const [showMenu, setShowMenu] = useState(false)
+  return (
+    <>
+      <div className="">
+        <div className="flex justify-between sm:px-20 px-5 py-5  ">
+          <div className="">
+            <button className="bg-black text-sky-500 p-2 rounded-lg font-bold shadow-2xl font-poppins">
+              Axios Agency
+            </button>
+          </div>
+          <ul className=" gap-10 sm:flex hidden">
+            <select>
+              <option onClick={() => SetBg(true)}>es</option>
+              <option onClick={() => SetBg(false)}>en</option>
+            </select>
+            <li className="font-poppins p-2 rounded hover:text-sky-500 border-[1px] hover:border-sky-500 border-transparent">
+              Servicios
+            </li>
+            <li className="font-poppins p-2 rounded hover:text-sky-500 border-[1px] hover:border-sky-500 border-transparent">
+              Porque Nosotros
+            </li>
+            <li className="font-poppins p-2 rounded hover:text-sky-500 border-[1px] hover:border-sky-500 border-transparent">
+              Contacto
+            </li>
+          </ul>
+        </div>
+
+        <div
+          className={`sm:hidden  bg-sky-500 fixed sm:static  w-full h-full top-0 bg-secondary-100 p-4 flex flex-col justify-between z-50 ${
+            showMenu ? "right-0" : "-right-full"
+          } transition-all duration-300`}
+        >
+          <header className=" flex flex-col sm:flex-row justify-between">
+            <button className="">Axios Agency</button>
+            <ul className="flex gap-5 sm:flex-row flex-col">
+              <li>a</li>
+              <li>a</li>
+              <li>a</li>
+              <li>a</li>
+            </ul>
+
+            <button
+              onClick={() => setShowMenu(!showMenu)}
+              className="sm:hidden fixed  right-4 bg-sky-500 text-black p-3 rounded-full z-50 border-[2px] border-sky-500"
+            >
+              {showMenu ? <RiCloseLine /> : <RiMenu3Line />}
+            </button>
+          </header>
+        </div>
+      </div>
+    </>
+  );
+}
 
 export default Nav
