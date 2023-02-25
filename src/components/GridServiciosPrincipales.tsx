@@ -6,16 +6,16 @@ import {DiCodeigniter} from 'react-icons/di'
 
 const GridServiciosPrincipales = () => {
   return (
-    <div className="p-36  mt-36 bg-gray-200">
-      <p className="text-5xl font-poppins font-bold">
-        Brindamos servicios de marketing digital en toda latinamerica
+    <div className="sm:p-36  px-5  py-16 mt-36 bg-gray-200">
+      <p className="sm:text-5xl text-3xl font-poppins font-bold">
+        Brindamos servicios de marketing digital en toda Latinoamerica
       </p>
-      <div className="grid sm:grid-cols-4 grid-cols-1">
+      <div className="grid sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-4 grid-cols-1" >
         <div className="p-4  flex flex-col justify-center place-items-center gap-4">
           <div className="text-center">
             <HiLightBulb className="text-8xl text-yellow-500 " />
           </div>
-          <p className="text-2xl ">Gestion de Redes sociales</p>
+          <p className="text-2xl font-poppins font-bold">Gestion de Redes sociales</p>
           <p className="font-poppins">
             Llevamos las gestiones de{" "}
             <strong>Redes Sociales de negocios,</strong> diseñamos{" "}
@@ -29,7 +29,7 @@ const GridServiciosPrincipales = () => {
           <div className="text-center">
             <DiCodeigniter className="text-8xl text-yellow-500 " />
           </div>
-          <p className="text-2xl ">Posicionamiento SEO y SEM</p>
+          <p className="text-2xl font-poppins font-bold">Posicionamiento SEO y SEM</p>
           <p className="font-poppins">
             Expertos en SEO On page y seo off page de sitios web para{" "}
             <strong>
@@ -45,7 +45,7 @@ const GridServiciosPrincipales = () => {
           <div className="text-center">
             <MdWeb className="text-8xl text-yellow-500 " />
           </div>
-          <p className="text-2xl ">Diseño de Paginas Web</p>
+          <p className="text-2xl font-poppins font-bold">Diseño de Paginas Web</p>
           <p className="font-poppins">
             Planes y paquetes de diseños de páginas Web, diseño de landing page,
             one page, blog web, páginas web informativas y páginas para{" "}
@@ -57,7 +57,7 @@ const GridServiciosPrincipales = () => {
           <div className="text-center">
             <RiWhatsappFill className="text-8xl text-yellow-500 " />
           </div>
-          <p className="text-2xl ">Bot de Whatsapp Personalizado</p>
+          <p className="text-2xl font-poppins font-bold">Bot de Whatsapp Personalizado</p>
           <p className="font-poppins">
             El chatbot para WhatsApp es ideal para administrar y lidiar en la
             comunicación con tus leads y clientes. Más específicamente, un
