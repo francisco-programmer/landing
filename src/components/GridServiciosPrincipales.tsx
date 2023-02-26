@@ -6,10 +6,11 @@ import {DiCodeigniter} from 'react-icons/di'
 
 const GridServiciosPrincipales = () => {
   return (
-    <div className="sm:p-36  px-5  py-16 mt-36 bg-gray-200">
-      <p className="sm:text-5xl text-3xl font-poppins font-bold">
+    <div className="sm:p-36  px-5  py-16 mt-36 bg-gray-200 text-gray-900">
+      <p className="sm:text-5xl text-3xl font-poppins font-bold text-gray-900">
         Brindamos servicios de marketing digital en toda Latinoamerica
       </p>
+     
       <div className="grid sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-4 grid-cols-1" >
         <div className="p-4  flex flex-col justify-center place-items-center gap-4">
           <div className="text-center">

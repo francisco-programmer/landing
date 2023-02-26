@@ -1,6 +1,7 @@
 import GridServiciosPrincipales from "./GridServiciosPrincipales"
 import Nav from "./Nav"
 import Presentation from "./Presentation"
+import Shop from "./Shop"
 
 const Landing = () => {
 
@@ -10,6 +11,7 @@ const Landing = () => {
             <Nav />
             <Presentation />
             <GridServiciosPrincipales />
+            <Shop />
             
             </div>
         </div>
