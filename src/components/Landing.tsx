@@ -2,6 +2,8 @@ import GridServiciosPrincipales from "./GridServiciosPrincipales"
 import Nav from "./Nav"
 import Presentation from "./Presentation"
 import Shop from "./Shop"
+import Software from "./Software"
+import Videos from "./Videos"
 
 const Landing = () => {
 
@@ -12,6 +14,8 @@ const Landing = () => {
             <Presentation />
             <GridServiciosPrincipales />
             <Shop />
+            <Software />
+            <Videos />
             
             </div>
         </div>

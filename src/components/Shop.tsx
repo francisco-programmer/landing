@@ -42,23 +42,23 @@ const Shop = () => {
 
   return (
     <div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 p-36 gap-10">
+      <div className="grid sm:grid-cols-2 grid-cols-1 sm:p-36 px-5 py-10 gap-10">
         <div className='flex flex-col gap-4'>
-          <p className="font-poppins text-5xl text-gray-900">
-            Desarrollamos tu tienda online
+          <p className="font-poppins sm:text-5xl text-3xl text-gray-900 font-bold">
+            <strong>Desarrollamos tu tienda online</strong>
           </p>
           <p className='font-poppins text-xl'>Algunos Beneficios:</p>
           <ul>
-            <li className='flex gap-4'><BsFillBagCheckFill />Pasarela de Pagos</li>
-            <li className='flex gap-4'><BsFillBagCheckFill /> Disponibilidad 24/7</li>
-            <li className='flex gap-4'><BsFillBagCheckFill /> Ampliacion de Mercado</li>
-            <li className='flex gap-4'><BsFillBagCheckFill /> Visibilidad</li>
-            <li className='flex gap-4'><BsFillBagCheckFill /> Reduccion de gastos</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill />Pasarela de Pagos</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Disponibilidad 24/7</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Ampliacion de Mercado</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Visibilidad</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Reduccion de gastos</li>
           </ul>
         </div>
-        <div className="h-40">
+        <div className="">
           <img src={tiendas[countImage].url} className="h-64 w-[460px]  rounded-lg shadow-xl" />
-          <div className=" flex justify-center gap-10 p-4">
+          <div className=" flex justify-center gap-10 p-4 m-1">
             <button
               className="text-xl"
               disabled={countImage === 0 ? true : false}
