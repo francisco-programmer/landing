@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <>
       <div className="">
-        <div className="flex justify-between sm:px-20 px-5 py-5  w-screen ">
+        <div className="flex justify-between sm:px-20 px-5 py-5 sm:px-36 w-screen ">
           <div className="">
             <img src={logo} className="w-32" />
           </div>
@@ -28,17 +28,20 @@ const Nav = () => {
               <option onClick={() => SetBg(false)}>En</option>
             </select>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-             <a href='#servicios'> Servicios </a>
+             <a href='#servicios'> Home</a>
+            </li>
+            
+            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
+              Blog
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-              Nosotros
+              Condiciones
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-              Contacto
+              Trabaja con Nosotros
             </li>
           </ul>
         </div>
-
         <div
           className={`sm:hidden  bg-gray-200 fixed sm:static w-full h-full top-0 bg-secondary-100 p-4 flex flex-col justify-between z-50 transition-all ease-linear ${
             showMenu ? "right-0 " : " invisible" 
