@@ -17,8 +17,8 @@ const Footer = () => {
         
       <ul className=" sm:gap-10 flex sm:flex-row flex-col">
             <select className='bg-transparent border-[1px] rounded text-gray-200'>
-              <option onClick={() => SetBg(true)}>Es</option>
-              <option onClick={() => SetBg(false)}>En</option>
+              <option >Es</option>
+              <option >En</option>
             </select>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
              <a href='#servicios'>Home</a>
