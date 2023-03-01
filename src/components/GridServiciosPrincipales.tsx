@@ -6,7 +6,7 @@ import {DiCodeigniter} from 'react-icons/di'
 
 const GridServiciosPrincipales = () => {
   return (
-    <div className="sm:p-36  px-5  py-16 mt-36 bg-gray-200 text-gray-900" id='servicios'>
+    <div className="sm:p-36  px-5  py-16  bg-gray-200 text-gray-900" id='servicios'>
       <p className="sm:text-5xl text-3xl font-poppins font-bold text-gray-900">
         Brindamos servicios de marketing digital 
       </p>
