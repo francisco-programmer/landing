@@ -28,7 +28,7 @@ const Footer = () => {
               Blog
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-             Terminos y  Condiciones
+             Terminos y  Condicioness
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
               Trabaja con Nosotros
