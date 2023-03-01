@@ -49,13 +49,14 @@ const Shop = () => {
           </p>
           <p className='font-poppins text-xl'>Algunos Beneficios:</p>
           <ul>
-            <li className='flex gap-4 items-center'><BsFillBagCheckFill />Pasarela de Pagos</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill  className='text-gray-600'/>Pasarela de Pagos</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Disponibilidad 24/7</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Ampliacion de Mercado</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Visibilidad</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Reduccion de gastos</li>
           </ul>
         </div>
+        {/* slider de images */}
         <div className="">
           <img src={tiendas[countImage].url} className="h-64 w-[460px]  rounded-lg shadow-xl" />
           <div className=" flex justify-center gap-10 p-4 m-1">

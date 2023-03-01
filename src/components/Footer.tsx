@@ -28,10 +28,14 @@ const Footer = () => {
               Blog
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-             Terminos y  Condicioness
+             Contacto
             </li>
+            
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
               Trabaja con Nosotros
+            </li>
+            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
+             Terminos y  Condicioness
             </li>
           </ul>
           <div className='flex text-2xl gap-5 sm:justify-end'>

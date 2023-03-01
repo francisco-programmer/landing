@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import {Link } from 'react-router-dom'
 import {IoBusinessSharp } from  "react-icons/io5";
 import { IoMdHelpCircle } from  "react-icons/io";
 import {BiLogOut } from  "react-icons/bi";
@@ -20,7 +20,9 @@ const Nav = () => {
       <div className="">
         <div className="flex justify-between sm:px-20 px-5 py-5 sm:px-36 w-screen ">
           <div className="">
+          <Link to="/">
             <img src={logo} className="w-32" />
+            </Link>
           </div>
           <ul className=" gap-10 sm:flex hidden">
             <select className='bg-transparent border-[1px] rounded text-gray-200'>
@@ -35,7 +37,7 @@ const Nav = () => {
               Blog
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-              Condiciones
+              Contacto
             </li>
             <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
               Trabaja con Nosotros

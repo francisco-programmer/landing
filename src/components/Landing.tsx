@@ -7,7 +7,7 @@ const Landing = () => {
 
     return (
       <div>
-        <div className="w-full bg-luna sm:bg-contain bg-center ">
+        <div className="w-full h-[100vh] bg-luna sm:bg-contain bg-center ">
           <Nav />
         
         <Outlet />
