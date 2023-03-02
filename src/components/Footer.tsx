@@ -4,40 +4,39 @@ import {FaFacebookSquare} from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
 import { ImLinkedin } from 'react-icons/im'
 import {ImWhatsapp} from 'react-icons/im'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-    <div className='sm:px-36 py-10 flex sm:flex-row flex-col place-items-center justify-between bg-gray-900 text-gray-200 '>
+    <div className='sm:px-36 py-10 px-5 flex sm:flex-row flex-col place-items-center justify-between bg-gray-900 text-gray-200  w-full'>
       <div> 
       <img src={logo}  className='w-32'/>
       <div>
-        <p>Copy</p>
+        <p>Pagina creada y diseñada por Axios studio ™ 2023</p>
       </div>
       </div>
-      <div className='flex flex-col gap-5 text-gray-900'>
+      
         
-      <ul className=" sm:gap-10 flex sm:flex-row flex-col">
-            <select className='bg-transparent border-[1px] rounded text-gray-200'>
-              <option >Es</option>
-              <option >En</option>
-            </select>
-            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-             <a href='#servicios'>Home</a>
+      <ul className="flex  sm:flex-row flex-col gap-5">
+              
+            <li className="font-poppins  text-gray-200  ">
+             Home
             </li>
             
-            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
+            <li className="font-poppins text-gray-200 ">
               Blog
             </li>
-            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
+            <li className="font-poppins text-gray-200 ">
              Contacto
             </li>
             
-            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-              Trabaja con Nosotros
+            <li className="font-poppins  text-gray-200 t">
+             <Link to="trabaja-con-nosotros">Trabaja con Nosotros</Link> 
             </li>
-            <li className="font-poppins p-2 rounded text-gray-200 border-[1px] hover:border-gray-200 border-transparent">
-             Terminos y  Condicioness
+            <li className="font-poppins  text-gray-200 ">
+            <Link to="terminos-y-condiciones">Terminos y  Condicioness</Link> 
             </li>
           </ul>
+
           <div className='flex text-2xl gap-5 sm:justify-end'>
           <FaFacebookSquare className='text-blue-500' />
           <BsInstagram  className='text-pink-500'/>
@@ -45,7 +44,7 @@ const Footer = () => {
           <ImWhatsapp className='text-green-500'/>
 
 
-        </div>
+       
       </div>
     </div>
   )

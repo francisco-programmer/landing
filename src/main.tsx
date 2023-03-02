@@ -9,6 +9,7 @@ import {
 import Page404 from './page/Page404';
 import Home from './components/Home';
 import TerminosCondiciones from './components/TerminosCondiciones';
+import TrabajaConNosotros from './components/trabaja/TrabajaConNosotros';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "terminos-y-condiciones",
         element: <TerminosCondiciones />
+      },
+      {
+        path: "trabaja-con-nosotros",
+        element: <TrabajaConNosotros />
       }
     ]
   }
