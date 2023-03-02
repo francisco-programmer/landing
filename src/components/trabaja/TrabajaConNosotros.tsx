@@ -17,7 +17,7 @@ const TrabajaConNosotros = () => {
           
 
 
-        <CardEmpleo stilo={stilo}/>
+        <CardEmpleo />
       
 </div>
     

@@ -2,7 +2,7 @@ import React from 'react'
 import {CiLocationOn} from 'react-icons/ci'
 import vacantes from './vacantes.json'
 
-const CardEmpleo = ({stilo}) => {
+const CardEmpleo = () => {
   return (
     
     <div className='grid sm:grid-cols-2 grid-cols-1 gap-10'>
@@ -20,8 +20,8 @@ const CardEmpleo = ({stilo}) => {
              </p>
             </div>
             <div>
-              <p className={stilo}>Skill:</p>
-              <p className={stilo}>{item.skill}</p>
+              <p className="text-gra-900 font-poppins">Skill:</p>
+              <p className="text-gra-900 font-poppins">{item.skill}</p>
     
             </div>
             <div className='px-5'>
