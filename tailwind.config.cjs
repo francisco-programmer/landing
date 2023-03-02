@@ -8,7 +8,7 @@ module.exports = {
     },
     backgroundImage: {
       'luna': "url('https://github.com/francisco-programmer/landing/blob/main/src/assets/luna.jpeg?raw=true')",
-      "encantados": "url(./assets/Encantados de conocerte.png)"
+      "encantados": "url(./assets/Encantadosdeconocerte.png)"
       
     }
   },
