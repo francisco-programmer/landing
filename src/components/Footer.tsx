@@ -19,14 +19,19 @@ const Footer = () => {
       <ul className="flex  sm:flex-row flex-col gap-5">
               
             <li className="font-poppins  text-gray-200  ">
+              <Link to="/">
+
              Home
+              </Link>
             </li>
             
             <li className="font-poppins text-gray-200 ">
               Blog
             </li>
             <li className="font-poppins text-gray-200 ">
+              <Link to="contact">
              Contacto
+             </Link>
             </li>
             
             <li className="font-poppins  text-gray-200 t">

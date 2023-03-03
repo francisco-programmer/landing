@@ -10,6 +10,7 @@ import Page404 from './page/Page404';
 import Home from './components/Home';
 import TerminosCondiciones from './components/TerminosCondiciones';
 import TrabajaConNosotros from './components/trabaja/TrabajaConNosotros';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "trabaja-con-nosotros",
         element: <TrabajaConNosotros />
+      },
+      {
+        path: "contact",
+        element: <Contact />
       }
     ]
   }
