@@ -17,8 +17,8 @@ const Nav = () => {
       const [showMenu, setShowMenu] = useState(false)
   return (
     <>
-      <div className="bg-luna">
-        <div className="flex justify-between sm:px-20 px-5 py-5 sm:px-36 w-screen ">
+      <div className='bg-[#0C171A]'>
+        <div className="flex justify-between  px-5 py-5 sm:px-36 w-screen ">
           <div className="">
           <Link to="/">
             <img src={logo} className="w-32" />

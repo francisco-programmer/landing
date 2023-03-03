@@ -7,7 +7,8 @@ module.exports = {
       'poppins': ['Poppins', 'sans-serif']
     },
     backgroundImage: {
-      'luna': "url('https://github.com/francisco-programmer/landing/blob/main/src/assets/luna.jpeg?raw=true')",
+      'lunamovil': "url('./assets/ezgif.com-crop.webp')",
+      'luna': "url('./assets/ezgif.com-webp-maker.webp')",
       "encantados": "url('https://github.com/francisco-programmer/landing/blob/main/src/assets/Encantadosdeconocerte.png?raw=true')"
       
     }

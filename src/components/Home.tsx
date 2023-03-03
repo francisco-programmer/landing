@@ -1,22 +1,47 @@
-import React from 'react'
-import Presentation from "./Presentation"
-import Shop from "./Shop"
-import Software from "./Software"
-import Videos from "./Videos"
+import React, {lazy, Suspense} from 'react'
+import Presentacion from './Presentation'
+
+
+
+
 import GridServiciosPrincipales from "./GridServiciosPrincipales";
+import Loading from './Loading';
 
 const Home = () => {
+
+const Shop = lazy(() => import("./Shop"));
+const Software = lazy(() => import("./Software"));
+const Videos = lazy(() => import("./Videos"));
+
+
   return (
     <div>
-       <Presentation />
-            <GridServiciosPrincipales />
-            <Shop />
-            <Software />
-            <Videos />
-            
+      
+      <div>
+      
+          <Presentacion />
         
+      </div>
+      <GridServiciosPrincipales />
+
+      <div>
+        <Suspense fallback={<div>Loading..</div>}>
+          <Shop />
+        </Suspense>
+      </div>
+
+      <div>
+        <Suspense fallback={<div>Loading..</div>}>
+          <Software />
+        </Suspense>
+      </div>
+      <div>
+        <Suspense fallback={<div>Loading..</div>}>
+          <Videos />
+        </Suspense>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Home

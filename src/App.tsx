@@ -1,17 +1,21 @@
-import { useState } from 'react'
+import {  lazy, Suspense } from 'react'
 
 import './App.css'
 import Landing from './components/Landing'
-import Nav from './components/Nav'
+
 
 function App() {
+  const Loading = lazy(() => import('./components/Loading'))
 
  
   
 
   return (
     <div className="App ">
+      <Suspense fallback={<Loading />}>
+
       <Landing />
+      </Suspense>
     </div>
   );
 }

@@ -16,11 +16,11 @@ const Software = () => {
   const tiendas = [
     {
       id: 1,
-      url: "https://www.frandev.tech/assets/dashboard-5b3de9ca.png",
+      url: "https://i.pinimg.com/736x/cb/3e/a0/cb3ea09a36c7b448a97ee7cb929da435--gym-leggings-leggings-fitness.jpg",
     },
     {
       id: 2,
-      url: "https://i.pinimg.com/736x/cb/3e/a0/cb3ea09a36c7b448a97ee7cb929da435--gym-leggings-leggings-fitness.jpg",
+      url: "https://www.frandev.tech/assets/dashboard-5b3de9ca.png",
     },
     {
       id: 3,

@@ -22,7 +22,7 @@ const Videos = () => {
           autoPlay
           loop
         >
-          <source src={video} type="video/mp4" />
+          <source src="https://res.cloudinary.com/dqcrhwlex/video/upload/v1677874920/video_heh3bj.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
