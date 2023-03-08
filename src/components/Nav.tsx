@@ -65,7 +65,7 @@ const Nav = () => {
               <li>Blog</li>
               <li>
                 <Link
-                  to="trabaja-con-nosotros"
+                  to="jobs"
                   onClick={() => setShowMenu(!showMenu)}
                 >
                   Trabaja con Nosotros

@@ -1,10 +1,34 @@
-import React, { EventHandler } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const notify = (e: any) => {
-    e.preventDefault()
+const form = useRef()
+
+const sendEmail = (e: any) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_mfeddo6",
+      "template_hn1loxq",
+      form.current,
+      "DDvHciQ4-0dSQV_Pa"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.target.reset()
+};
+
+  const notify = () => {
+    
     toast("🦄 Mensaje Enviado!", {
       position: "top-center",
       autoClose: 5000,
@@ -46,12 +70,12 @@ const Contact = () => {
               </p>
             </div>
 
-            <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+            <form ref={form} onSubmit={sendEmail} className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
               <div className="pb-2">
                 <input
                   className="block w-full p-2 text-lg  text-black rounded-xl "
                   type="text"
-                  name="name"
+                  name="to_name"
                   id="name"
                   placeholder="Nombre Completo"
                 />
@@ -60,7 +84,7 @@ const Contact = () => {
                 <input
                   className="block w-full p-2 text-lg  text-black rounded-xl "
                   type="text"
-                  name="name"
+                  name="email"
                   id="name"
                   placeholder="Email"
                 />
@@ -69,7 +93,7 @@ const Contact = () => {
                 <input
                   className="block w-full p-2 text-lg  text-black rounded-xl "
                   type="text"
-                  name="name"
+                  name="pais"
                   id="name"
                   placeholder="Pais"
                 />
@@ -78,7 +102,7 @@ const Contact = () => {
                 <input
                   className="block w-full p-2 text-lg  text-black rounded-xl "
                   type="text"
-                  name="name"
+                  name="whatsapp"
                   id="name"
                   placeholder="Whatsapp +573015984814"
                 />
@@ -86,13 +110,13 @@ const Contact = () => {
               <div className="pb-2 ">
                 <textarea
                   className="block w-full p-4 text-lg  text-black rounded-xl "
-                  name="name"
+                  name="message"
                   id="name"
                   placeholder="Mensaje"
                 />
               </div>
               <div className="px-4 pb-2 pt-2">
-                <button onClick={notify} className="uppercase block w-full p-2 text-lg rounded-full mb-10 bg-indigo-500 hover:bg-indigo-600 focus:outline-none">
+                <button  className="uppercase block w-full p-2 text-lg rounded-full mb-10 bg-indigo-500 hover:bg-indigo-600 focus:outline-none">
                   Enviar
                 </button>
               </div>
