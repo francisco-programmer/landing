@@ -6,6 +6,8 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
 const form = useRef()
 
+
+//funcion de libreria EmailJs para el envio de formularion
 const sendEmail = (e: any) => {
   e.preventDefault();
 
@@ -13,7 +15,7 @@ const sendEmail = (e: any) => {
     .sendForm(
       "service_mfeddo6",
       "template_hn1loxq",
-      e.currentTarget ,
+      e.currentTarget , //se obtiene los valores del formulario
       "DDvHciQ4-0dSQV_Pa"
     )
     .then(
@@ -24,12 +26,14 @@ const sendEmail = (e: any) => {
         console.log(error.text);
       }
     );
-    e.currentTarget.reset()
+    e.currentTarget.reset() //reseteando el formulario
+    notify()
 };
 
+//funtcion for notificacion envio del formulario
   const notify = () => {
     
-    toast("🦄 Mensaje Enviado!", {
+    toast("🚀🚀 Gracias por tu mensaje nos pondremos en contacto contigo 🚀🚀", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -37,7 +41,7 @@ const sendEmail = (e: any) => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "light",
+      theme: "dark",
     });
   }
   return (
@@ -69,8 +73,11 @@ const sendEmail = (e: any) => {
                 Deje que sus ideas vuelen a todas partes del mundo!
               </p>
             </div>
-
-            <form  onSubmit={sendEmail} className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+            {/* formulario de contacto */}
+            <form
+              onSubmit={sendEmail}
+              className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto"
+            >
               <div className="pb-2">
                 <input
                   className="block w-full p-2 text-lg  text-black rounded-xl "
@@ -78,6 +85,7 @@ const sendEmail = (e: any) => {
                   name="to_name"
                   id="name"
                   placeholder="Nombre Completo"
+                  required
                 />
               </div>
               <div className="pb-2">
@@ -87,6 +95,7 @@ const sendEmail = (e: any) => {
                   name="email"
                   id="name"
                   placeholder="Email"
+                  required
                 />
               </div>
               <div className="pb-2 ">
@@ -96,6 +105,7 @@ const sendEmail = (e: any) => {
                   name="pais"
                   id="name"
                   placeholder="Pais"
+                  required
                 />
               </div>
               <div className="pb-2 ">
@@ -105,6 +115,7 @@ const sendEmail = (e: any) => {
                   name="whatsapp"
                   id="name"
                   placeholder="Whatsapp +573015984814"
+                  required
                 />
               </div>
               <div className="pb-2 ">
@@ -113,15 +124,17 @@ const sendEmail = (e: any) => {
                   name="message"
                   id="name"
                   placeholder="Mensaje"
+                  required
                 />
               </div>
               <div className="px-4 pb-2 pt-2">
-                <button  className="uppercase block w-full p-2 text-lg rounded-full mb-10 bg-indigo-500 hover:bg-indigo-600 focus:outline-none">
+                <button className="uppercase block w-full p-2 text-lg rounded-full mb-10 bg-indigo-500 hover:bg-indigo-600 focus:outline-none">
                   Enviar
                 </button>
               </div>
             </form>
           </div>
+        {/* container para la notificacion */}
           <ToastContainer
             position="top-right"
             autoClose={5000}
