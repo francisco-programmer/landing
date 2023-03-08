@@ -49,7 +49,7 @@ const Shop = () => {
           </p>
           <p className='font-poppins text-xl'>Algunos Beneficios:</p>
           <ul>
-            <li className='flex gap-4 items-center'><BsFillBagCheckFill  className='text-gray-600'/>Pasarela de Pagos</li>
+            <li className='flex gap-4 items-center'><BsFillBagCheckFill  className=''/>Pasarela de Pagos</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Disponibilidad 24/7</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Ampliacion de Mercado</li>
             <li className='flex gap-4 items-center'><BsFillBagCheckFill /> Visibilidad</li>

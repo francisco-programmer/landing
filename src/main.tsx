@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <TerminosCondiciones />
       },
       {
-        path: "trabaja-con-nosotros",
+        path: "jobs",
         element: <TrabajaConNosotros />
       },
       {
