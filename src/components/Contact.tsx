@@ -13,7 +13,7 @@ const sendEmail = (e: any) => {
     .sendForm(
       "service_mfeddo6",
       "template_hn1loxq",
-      form.current,
+      
       "DDvHciQ4-0dSQV_Pa"
     )
     .then(
@@ -70,7 +70,7 @@ const sendEmail = (e: any) => {
               </p>
             </div>
 
-            <form ref={form} onSubmit={sendEmail} className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+            <form onSubmit={sendEmail} className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
               <div className="pb-2">
                 <input
                   className="block w-full p-2 text-lg  text-black rounded-xl "
