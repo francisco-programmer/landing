@@ -38,10 +38,10 @@ const Footer = () => {
   
      
       <div className="flex text-2xl gap-5 sm:justify-end">
-        <FaFacebookSquare className="text-blue-500" />
-        <BsInstagram className="text-pink-500" />
-        <ImLinkedin className="text-blue-800" />
-        <ImWhatsapp className="text-green-500" />
+        <FaFacebookSquare className="text-blue-500 cursor-pointer" onClick={() => window.open('https://www.facebook.com/agency.axios', '_blank')} />
+        <BsInstagram className="text-pink-500 cursor-pointer" onClick={() => window.open('https://www.instagram.com/axios.agency/', '_blank')} />
+        <ImLinkedin className="text-blue-800 cursor-pointer"  onClick={() => window.open('', '_blank')}/>
+        <ImWhatsapp className="text-green-500 cursor-pointer" onClick={() => window.open('wa.link/v4ppjl', '_blank')} />
       </div>
       </div>
     </div>

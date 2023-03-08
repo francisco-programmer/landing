@@ -3,9 +3,14 @@ import {CiLocationOn} from 'react-icons/ci'
 import vacantes from './vacantes.json'
 
 const CardEmpleo = () => {
+function formGoogle(){
+window.open('https://forms.gle/3HmgRawp8UApbpcy5', '_blank')
+}
+
+
   return (
     
-    <div className='grid sm:grid-cols-2 grid-cols-1 gap-10'>
+    <div className='grid lg:grid-cols-2 grid-cols-1 gap-10'>
 
     
       {
@@ -25,7 +30,7 @@ const CardEmpleo = () => {
     
             </div>
             <div className='px-5'>
-              <button className='bg-black p-2 text-gray-200 rounded w-full'>Aplicar</button>
+              <button className='bg-black p-2 text-gray-200 rounded w-full' onClick={formGoogle}>Aplicar</button>
             </div>
             </div>
           )
