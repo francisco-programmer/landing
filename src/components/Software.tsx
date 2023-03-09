@@ -42,7 +42,7 @@ const Software = () => {
 
   return (
     <div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 sm:p-36 px-5 py-10 gap-10 bg-gray-900">
+      <div className="grid lg:grid-cols-2 grid-cols-1 sm:p-36 px-5 py-10 gap-10 bg-gray-900">
       <div className="hidden sm:block">
           <img src={tiendas[countImage].url} className="h-64 w-[460px]  rounded-lg shadow-xl" />
           <div className=" flex justify-center gap-10 p-4 m-1">

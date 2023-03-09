@@ -42,7 +42,7 @@ const Shop = () => {
 
   return (
     <div className='bg-white'>
-      <div className="grid sm:grid-cols-2 grid-cols-1 sm:p-36 px-5 py-10 gap-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 sm:p-36 px-5 py-10 gap-10">
         <div className='flex flex-col gap-4'>
           <p className="font-poppins sm:text-5xl text-3xl text-gray-900 font-bold">
             <strong>Desarrollamos tu tienda online</strong>

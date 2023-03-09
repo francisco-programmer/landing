@@ -60,12 +60,12 @@ const Testimonials = () => {
     
   return (
     <div className="sm:px-36 sm:flex sm:py-36 gap-5 w-ful">
-         <div className="p-5 block sm:hidden">
-        <h1 className="text-4xl font-poppins text-gray-900">
+         <div className="p-5 flex flex-col gap-5 sm:hidden">
+        <h1 className="text-4xl font-poppins text-gray-900 font-bold" >
           Testimonios de nuestros clientes
         </h1>
-        <hr></hr>
-        <div className="sm:flex gap-10 justify-center my-5  hidden">
+        
+        <div className="sm:flex gap-10 justify-center hidden">
           <BsFillArrowLeftCircleFill className='text-gray-900 text-2xl cursor-pointer duration-700 hover:w-[36px]' 
             onClick={() => (slider.current.scrollLeft -= 200)}
           />
@@ -73,22 +73,15 @@ const Testimonials = () => {
             onClick={() => (slider.current.scrollLeft += 200)}
           />
         </div>
-        <hr></hr>
+        
         <div>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Rapidos</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Intuitivos</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Dinamicos</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Responsive</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Responsables</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Rapidos</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Intuitivos</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Dinamicos</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Responsive</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Responsables</p>
         </div>
-        <div className="flex gap-10 justify-center my-5  sm:hidden">
-          <BsFillArrowLeftCircleFill className='text-gray-900 text-2xl cursor-pointer duration-700 hover:w-[36px]' 
-            onClick={() => (slider.current.scrollLeft -= 200)}
-          />
-          <BsFillArrowRightCircleFill className='text-gray-900 text-2xl cursor-pointer duration-700 hover:w-[36px]'
-            onClick={() => (slider.current.scrollLeft += 200)}
-          />
-        </div>
+       
       </div>
       <div
         ref={slider}
@@ -120,11 +113,19 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
+      <div className="flex gap-10 justify-center my-5  sm:hidden">
+          <BsFillArrowLeftCircleFill className='text-gray-900 text-2xl cursor-pointer duration-700 hover:w-[36px]' 
+            onClick={() => (slider.current.scrollLeft -= 200)}
+          />
+          <BsFillArrowRightCircleFill className='text-gray-900 text-2xl cursor-pointer duration-700 hover:w-[36px]'
+            onClick={() => (slider.current.scrollLeft += 200)}
+          />
+        </div>
       <div className="p-5 hidden sm:block">
-        <h1 className="text-4xl font-poppins text-gray-900">
+        <h1 className="text-4xl font-poppins text-gray-900 font-bold">
           Testimonios de nuestros clientes
         </h1>
-        <hr></hr>
+        <hr className=''></hr>
         <div className="flex gap-10 justify-center my-5">
           <BsFillArrowLeftCircleFill className='text-gray-900 text-2xl cursor-pointer duration-700 hover:w-[36px]' 
             onClick={() => (slider.current.scrollLeft -= 200)}
@@ -135,11 +136,11 @@ const Testimonials = () => {
         </div>
         <hr></hr>
         <div>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Rapidos</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Intuitivos</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Dinamicos</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Responsive</p>
-            <p className='flex items-center gap-3 font-poppins font-bold'><FiCheck/>Responsables</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Rapidos</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Intuitivos</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Dinamicos</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Responsive</p>
+            <p className='flex items-center gap-3 font-poppins '><FiCheck/>Responsables</p>
         </div>
       </div>
     </div>
