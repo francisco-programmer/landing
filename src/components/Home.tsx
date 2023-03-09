@@ -12,6 +12,7 @@ const Home = () => {
 const Shop = lazy(() => import("./Shop"));
 const Software = lazy(() => import("./Software"));
 const Videos = lazy(() => import("./Videos"));
+const Testimonials = lazy(() => import("./Testimonials"))
 
 
   return (
@@ -39,6 +40,12 @@ const Videos = lazy(() => import("./Videos"));
         <Suspense fallback={<div>Loading..</div>}>
           <Videos />
         </Suspense>
+      </div>
+      <div>
+      <Suspense fallback={<div>Loading..</div>}>
+          <Testimonials />
+        </Suspense>
+
       </div>
     </div>
   );
