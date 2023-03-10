@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className="sm:px-36 py-10 px-5 flex sm:flex-row flex-col place-items-center justify-between bg-gray-900 text-gray-200  w-full">
-      <div>
-        <img src={logo} className="w-32" />
-        <div>
-          <p>Axios studio ™ 2023</p>
-        </div>
+      <div className='flex items-center'>
+        <img src={logo} className="w-14" />
+        <p className='font-poppins font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600'>Axios Agency</p>
+
+        
       </div>
 
       <ul className="flex  sm:flex-row flex-col gap-5">

@@ -19,8 +19,9 @@ const Nav = () => {
       <div className="bg-[#0C171A]">
         <div className="flex justify-between  px-5 py-5 sm:px-36 w-screen ">
           <div className="">
-            <Link to="/">
-              <img src={logo} className="w-32" />
+            <Link to="/" className='flex items-center '>
+              <img src={logo} className="w-14" />
+              <p className='font-poppins font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600'>Axios Agency</p>
             </Link>
           </div>
           <ul className=" gap-10 lg:flex hidden">
